@@ -1,0 +1,18 @@
+This package uses the undocumented Google toolbar spellcheck api, results are returned in xml, parsed and enhanced
+
+There is only one export... the check function
+it takes 2 parameters
+1) the text to check
+2) a callback to return the result to (first argument is err and second is res)
+
+Useage:
+var spell = require('gspell');
+
+spell.check('ths is a tst ub the spell chek spetem',function(err,res){
+console.log(res);
+});
+
+a javascript object is returned as the second argument to the callback
+
+the res.c array has the spelling suggestions as well as where the mispelling was found in the text and
+a confidence score of how sure it is about the suggestion
