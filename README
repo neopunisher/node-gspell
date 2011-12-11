@@ -5,7 +5,7 @@ it takes 2 parameters
 1) the text to check
 2) a callback to return the result to (first argument is err and second is res)
 
-Useage:
+Usage:
 var spell = require('gspell');
 
 spell.check('ths is a tst ub the spell chek spetem',function(err,res){
